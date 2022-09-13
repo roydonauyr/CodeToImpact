@@ -11,18 +11,18 @@ function App() {
   return (
     <>
       <Router>
-        <div className='container'>
+        <div className="container">
           <Header />
           <Routes>
-            <Route path='/' element={<Dashboard />}></Route>
-            <Route path='/login' element={<Login />}></Route>
-            <Route path='/register' element={<Register />}></Route>
+            <Route path="/" element={<Dashboard />}></Route>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/register" element={<Register />}></Route>
           </Routes>
         </div>
       </Router>
       <ToastContainer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

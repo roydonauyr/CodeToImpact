@@ -7,7 +7,7 @@ function GoalForm() {
 
   const dispatch = useDispatch()
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault()
 
     dispatch(createGoal({ text }))
@@ -18,11 +18,17 @@ function GoalForm() {
     <section className="form">
       <form onSubmit={onSubmit}>
         <div className="form-group">
-          <label htmlFor='text'>Goal</label>
-          <input type='text' name='text' id='text' value={text} onChange={e => setText(e.target.value)}/>
+          <label htmlFor="text">Goal</label>
+          <input
+            type="text"
+            name="text"
+            id="text"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+          />
         </div>
         <div className="form-group">
-          <button className="btn btn-block" type='submit'>
+          <button className="btn btn-block" type="submit">
             Add Goal
           </button>
         </div>

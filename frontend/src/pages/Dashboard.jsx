@@ -10,8 +10,10 @@ function Dashboard() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
-  const { user } = useSelector(state => state.auth)
-  const { goals, isLoading, isError, message } = useSelector(state => state.goals)
+  const { user } = useSelector((state) => state.auth)
+  const { goals, isLoading, isError, message } = useSelector(
+    (state) => state.goals
+  )
 
   useEffect(() => {
     if (isError) {
@@ -48,11 +50,13 @@ function Dashboard() {
       <section className="content">
         {goals.length > 0 ? (
           <div className="goals">
-            {goals.map(goal => (
+            {goals.map((goal) => (
               <GoalItem key={goal._id} goal={goal}></GoalItem>
             ))}
           </div>
-        ) : (<h3>You have not set any goals</h3>)}
+        ) : (
+          <h3>You have not set any goals</h3>
+        )}
       </section>
     </>
   )
