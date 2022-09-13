@@ -1,7 +1,6 @@
 const asyncHandler = require('express-async-handler')
 
 const Goal = require('../model/goalModel')
-const User = require('../model/userModel')
 
 // Description: Get goals
 // Route: GET /api/goals
