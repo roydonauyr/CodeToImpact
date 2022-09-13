@@ -12,3 +12,7 @@
 `npm install`
 
 `npm run dev`
+
+## Description of the original code
+
+The code is with reference to [MERN stack YouTube Tutorial playlist](https://www.youtube.com/watch?v=-0exw-9YJBo&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=1)
